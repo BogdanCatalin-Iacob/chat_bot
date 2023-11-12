@@ -27,3 +27,14 @@ def chat_bot(knowledge: dict):
         print(f'Bot: {answer}')
     else:
         print('Bot: I don\'t understand the question!')
+
+
+if __name__ == '__main__':
+    knowledge_base: dict = {
+        'hello': 'Hey there!',
+        'how are you': 'I\'m good, thanks!',
+        'What time is it': 'I have no clue...',
+        'bye': 'Hasta la vista :D'
+    }
+
+    chat_bot(knowledge_base)

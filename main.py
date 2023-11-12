@@ -18,7 +18,8 @@ def get_best_match(user_input: str, questions: dict) -> str | None:
 
 def chat_bot(knowledge: dict):
     '''
-    Answers back to user an answer of a matching question found in the knowledge dict
+    Returns back to user an answer of a matching question
+    found in the knowledge dict
     '''
     while True:
         user_input: str = input('You: ')

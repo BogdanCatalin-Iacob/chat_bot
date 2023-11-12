@@ -10,6 +10,9 @@ git push -u origin main
 ## Description
 This program will give some preset answer to user questions
 
+## Limitations
+-   Chat bot is limited to a predefined short dictionary
+
 ## Project Creation
 
 This project was developed using a [VS Code](https://code.visualstudio.com/). The code was committed to [Git](https://git-scm.com) and pushed to [GitHub](https://github.com) using the terminal.

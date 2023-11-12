@@ -20,13 +20,14 @@ def chat_bot(knowledge: dict):
     '''
     Answers back to user an answer of a matching question found in the knowledge dict
     '''
-    user_input: str = input('You: ')
-    best_match: str | None = get_best_match(user_input, knowledge)
+    while True:
+        user_input: str = input('You: ')
+        best_match: str | None = get_best_match(user_input, knowledge)
 
-    if answer := knowledge.get(best_match):
-        print(f'Bot: {answer}')
-    else:
-        print('Bot: I don\'t understand the question!')
+        if answer := knowledge.get(best_match):
+            print(f'Bot: {answer}')
+        else:
+            print('Bot: I don\'t understand the question!')
 
 
 if __name__ == '__main__':
